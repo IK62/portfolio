@@ -1,6 +1,6 @@
 import { Route, Router } from '@solidjs/router'
 import Layout from './layouts/layout'
-import Home from './components/home'
+import Home from './pages/home'
 
 function Routers() {
   return (

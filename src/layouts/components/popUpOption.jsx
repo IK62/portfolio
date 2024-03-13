@@ -4,7 +4,7 @@ function PopUpOption({ showOption, setShowOption }) {
   return (
     <div
       class={
-        'font-["BespokeSerif"] fixed flex flex-col justify-between top-0 left-0 w-screen h-screen bg-[var(--text-color)] text-[var(--background-color)] transition-opacity duration-500 p-3 ' +
+        'font-["BespokeSerif"] fixed flex flex-col justify-between top-0 left-0 w-screen h-screen bg-[var(--text-color)] text-[var(--background-color)] transition-opacity duration-500 p-[inherit] ' +
         (showOption() ? 'opacity-100 z-10' : 'opacity-0 -z-10')
       }
     >

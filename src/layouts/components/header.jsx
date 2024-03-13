@@ -1,10 +1,12 @@
+import { A } from "@solidjs/router"
+
 function Header({ setShowOption }) {
   return (
     <header class="flex justify-between">
       <h1>
-        <span class="w-0 animate-[1s_slideIn_1s_cubic-bezier(0,0,0.3,1)_forwards] inline-grid overflow-hidden">
+        <A href="/" class="w-0 animate-[1s_slideIn_1s_cubic-bezier(0,0,0.3,1)_forwards] inline-grid overflow-hidden">
           IK62
-        </span>
+        </A>
         <span class="animate-[1s_fadeOut_1s_cubic-bezier(0.8,0,1,1)_forwards]">|</span>
       </h1>
       <div
