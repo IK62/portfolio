@@ -33,7 +33,7 @@ function Home() {
                   <span class="sectionDivider"></span>
                   <li class="group cursor-pointer h-24 w-[calc(100%-4rem)] mx-auto py-4">
                     <a
-                      href={`/work/${item.title}`}
+                      href={`./work/${item.title}`}
                       class="flex justify-between items-center"
                     >
                       <h3 class="onTextHover">{item.title}</h3>
