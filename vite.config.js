@@ -1,9 +1,15 @@
-import { defineConfig } from 'vite';
-import solidPlugin from 'vite-plugin-solid';
+import { defineConfig } from 'vite'
+import solidPlugin from 'vite-plugin-solid'
 // import devtools from 'solid-devtools/vite';
 
 export default defineConfig({
-  base: "/portfolio/",
+  start: {
+    ssr: true,
+    server: {
+      baseURL: process.env.BASE_PATH,
+      preset: 'static',
+    },
+  },
   plugins: [
     /* 
     Uncomment the following line to enable solid-devtools.
@@ -18,4 +24,4 @@ export default defineConfig({
   build: {
     target: 'esnext',
   },
-});
+})
