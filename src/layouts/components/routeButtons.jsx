@@ -1,10 +1,10 @@
 import { A } from "@solidjs/router";
 
-function RouteButtons({ text, showOption, route}) {
+function RouteButtons({ text, showOption, setShowOption, route}) {
     const textArray = text.split('')
 
     return (
-      <A href={route} class="relative text-center overflow-hidden">
+      <A href={route} class="relative text-center overflow-hidden" onClick={setShowOption()}>
         {textArray.map((item, index) => (
           <span
             class='inline-block text-base sm:text-xl'

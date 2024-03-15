@@ -5,7 +5,7 @@ function PopUpOption({ showOption, setShowOption }) {
     <div
       class={
         'font-["BespokeSerif"] fixed flex flex-col justify-between top-0 left-0 w-screen h-screen bg-[var(--text-color)] text-[var(--background-color)] transition-opacity duration-500 p-[inherit] ' +
-        (showOption() ? 'opacity-100 z-10' : 'opacity-0 -z-10')
+        (showOption() ? 'opacity-100 z-20' : 'opacity-0 -z-10')
       }
     >
       <div class="flex justify-end">
@@ -29,16 +29,19 @@ function PopUpOption({ showOption, setShowOption }) {
         <RouteButtons
           text={'HOME'}
           showOption={() => showOption()}
+          setShowOption={() => setShowOption(false)}
           route={'/'}
-        />
+          />
         <RouteButtons
           text={'WORK'}
           showOption={() => showOption()}
-          route={'/work'}
-        />
+          setShowOption={() => setShowOption(false)}
+          route={'/works'}
+          />
         <RouteButtons
           text={'ABOUT'}
           showOption={() => showOption()}
+          setShowOption={() => setShowOption(false)}
           route={'/about'}
         />
       </div>

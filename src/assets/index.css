@@ -60,7 +60,18 @@
     font-weight: 600;
     --background-color: #ececec;
     --text-color: #262523;
+    --heightToSubstract: ;
+    --container-padding: clamp(2.5em, 8vw, 8em);
     background-color: var(--background-color);
     color: var(--text-color);
+  }
+  .onTextHover {
+    @apply group-hover:tracking-wide group-hover:opacity-50 transition-all duration-500;
+  }
+  .headerToBottomHeight {
+    @apply h-[calc(100svh-var(--heightToSubstract))] xl:h-[calc(100svh-2.75rem)];
+  }
+  .sectionDivider {
+    @apply w-full h-[1px] bg-[var(--text-color)];
   }
 }
