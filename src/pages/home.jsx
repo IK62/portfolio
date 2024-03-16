@@ -58,7 +58,35 @@ function Home() {
             <span class="sectionDivider"></span>
           </ul>
         ) : (
-          <ul></ul>
+          <>
+            <div class="sectionDivider mb-2"></div>
+            <ul class="flex flex-wrap justify-between gap-y-2 sm:gap-y-4 lg:gap-y-6 xl:gap-y-8 mb-10">
+              <For each={works}>
+                {(item) => (
+                  <>
+                    <div class="w-5/12 min-[450px]:h-10 sm:h-12 md:h-14 lg:h-20 xl:h-28 flex flex-col justify-between h-8">
+                      <div class="h-[70%]">
+                        <img
+                          src={
+                            new URL(
+                              `../assets/images/${item.cover}`,
+                              import.meta.url
+                            ).href
+                          }
+                          alt=""
+                          class="w-full h-full object-cover"
+                        />
+                      </div>
+                      <div class="flex justify-between text-[0.15rem] min-[450px]:text-[0.22rem] sm:text-[0.3rem] md:text-[0.35rem] lg:text-[0.5rem] xl:text-[0.65rem] border-b-[1px] lg:border-b-2 border-[var(--text-color)]">
+                        <h3>{item.title}</h3>
+                        <p>{item.type}</p>
+                      </div>
+                    </div>
+                  </>
+                )}
+              </For>
+            </ul>
+          </>
         )}
       </div>
     </main>

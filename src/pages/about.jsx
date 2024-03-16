@@ -1,19 +1,19 @@
 function About() {
   return (
     <>
-      <p class="my-5">
+      <p class="my-5 text-[0.3rem] sm:text-[0.5rem] lg:text-xs">
         I'm a passionnate web developer, i create beautiful and clean website
         for everyone to everyone, with years of experience and multiple projects
         in my belt i'm currently looking forwards to clients or even a fixed
         jobs.
       </p>
-      <div class="flex justify-between items-end mt-10">
-        <div class="flex gap-3">
+      <div class="flex justify-between items-end mt-5 lg:mt-8">
+        <div class="flex gap-1">
           <a href="https://github.com/ik62" target="_blank">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 496 512"
-              class="w-10 h-10"
+              class="w-4 h-4 sm:w-6 sm:h-6 lg:w-8 lg:h-8"
             >
               <path
                 fill="#262523"
@@ -25,7 +25,7 @@ function About() {
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 448 512"
-              class="w-10 h-10"
+              class="w-4 h-4 sm:w-6 sm:h-6 lg:w-8 lg:h-8"
             >
               <path
                 fill="#262523"
@@ -34,7 +34,7 @@ function About() {
             </svg>
           </a>
         </div>
-        <span class="font-[DancingScript]">Ismail Karrouch</span>
+        <span class="font-[DancingScript] text-[0.3rem] sm:text-[0.5rem] lg:text-xs">Ismail Karrouch</span>
       </div>
     </>
   )

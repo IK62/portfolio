@@ -82,7 +82,7 @@ function Works() {
             decrement={() => decrement()}
           />
           <div
-            class="overflow-hidden h-full w-full flex items-center justify-center"
+            class="overflow-hidden h-2/4 lg:h-3/4 2xl:h-full w-full flex items-center justify-center"
             onClick={() => {
               navigate(`/work/${works[index()].title}`)
             }}
@@ -95,7 +95,7 @@ function Works() {
               alt=""
               class="object-cover w-full h-full blur-[3px]"
             />
-            <h2 class="absolute">{currentText()}</h2>
+            <h2 class="absolute text-xs lg:text-2xl 2xl:text-5xl 2xl:font-normal">{currentText()}</h2>
           </div>
           <CarouselButtons
             toRight={true}
