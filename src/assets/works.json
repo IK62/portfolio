@@ -3,24 +3,28 @@
         "title": "Booki",
         "cover": "bookiCover.png",
         "description": "Booki is an accomodation agency startup, this website allow them to host multiple accomodations in multiple city, it was made using purely html and css.",
-        "type": "Development"
+        "type": "Development",
+        "link": "https://github.com/IK62/booki"
     },
     {
         "title": "ohMyFood",
         "cover": "ohMyFoodCover.png",
         "description": "ohMyFood is a restaurant website that allow users to find, choose your menu and book a table at a multitude of restaurants across the country.",
-        "type": "Development"
+        "type": "Development",
+        "link": "https://github.com/IK62/Ohmyfood"
     },
     {
         "title": "sophieBluel",
         "cover": "sophieBluelCover.png",
         "description": "This website is the portfolio of sophie bluel an interior designer, showing of all of her project, social media and contacts.",
-        "type": "Development"
+        "type": "Development",
+        "link": "https://github.com/IK62/Portfolio-architecte-sophie-bluel"
     },
     {
         "title": "kasa",
         "cover": "kasaCover.png",
         "description": "Kasa is a apartment rental startup, leader in the market this website allow them to show thousands of apartments including all the necessary information.",
-        "type": "Development"
+        "type": "Development",
+        "link": "https://github.com/IK62/Kasa"
     }
 ]
